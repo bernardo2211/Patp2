@@ -1,0 +1,47 @@
+.menu {
+    position: relative;
+    width: 280px;
+    display: flex;
+    flex-direction: column; /* Alteração para exibir os itens verticalmente */
+    align-items: center;
+    background: #3007e6; /* Cor de fundo para melhor visualização */
+}
+
+.menu .toggle {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    background: #0f0f0f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    color: #333;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 1.25s;
+    align-items: center;
+    z-index: 5;
+}
+
+.menu.active .toggle {
+    transform: rotate(360deg);
+    box-shadow: 0 0 0 2px #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0; /* Espaçamento entre os itens */
+    color: var(--clr); /* Cor personalizada para os itens */
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
